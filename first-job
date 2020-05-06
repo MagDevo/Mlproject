@@ -1,0 +1,7 @@
+sudo cp -v -r -f * /project
+if sudo docker ps | grep webOS
+then
+echo "already running"
+else
+sudo docker run -dit -p 8089:80 -v /project:/usr/local/apache2/htdocs/ --name webOS httpd
+fi
