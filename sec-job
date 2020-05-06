@@ -1,0 +1,7 @@
+sudo cp -v -r -f * /porj1
+if sudo docker ps | grep TestEnv
+then
+echo "already running"
+else
+sudo docker run -dit -v /porj1:/usr/local/apache2/htdocs/ --name TestEnv httpd
+fi
