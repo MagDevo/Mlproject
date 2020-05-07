@@ -5,7 +5,7 @@ Create new file after each major step
 
 **To deploy the project**
 1) In GIT bash go to Your project_folder/.git/hooks//
-2) create post-commit file and copy paste data from post-commit
+2) create post-commit file and copy paste data from post-commit and post-commit-dev1
 3) In github set up hooks.
 4) a. Copy paste code of first-job
    b. Set trigger to **GitHub hook trigger for GITScm polling and build to production system**
